@@ -10,7 +10,7 @@ const App: FC = () => {
       <p>Count: {count}</p>
       <button onClick={() => setCount(count + 1)}>👍+1</button>
     </div>
-  )
-}
+  );
+};
 
 export default App;

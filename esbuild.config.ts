@@ -1,14 +1,14 @@
-const path = require('path');
+import path from 'path';
 
-const sassPlugin = require('esbuild-plugin-sass')
+import sassPlugin from 'esbuild-plugin-sass';
 
 const distDir = path.join(process.cwd(), 'dist');
 
-module.exports = {
+export default {
   entryPoints: ['./src/index.tsx'],
   bundle: true,
   color: true,
   sourcemap: true,
   outdir: distDir,
-  plugins: [sassPlugin()]
+  plugins: [sassPlugin()],
 };
